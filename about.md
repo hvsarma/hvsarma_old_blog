@@ -20,7 +20,7 @@ I presently live in New York City, but have studied and worked in Bangalore (Ind
 
 	- 2.5 years experience in agile, start-up environments, wearing 'all sorts of hats'.
 
-	- Quite some time doing B2B research with a consultancy (in India and Singapore).
+	- Quite some years doing B2B research with a consultancy (in India and Singapore).
 
 
 ### Contact me
