@@ -12,7 +12,7 @@ Characteristics of a regression model is that - there is a probability distribut
 
 2. Plot the function (line or curve) and data. Does it fit the data?
 
-3. Interpret b0, b1, b2, .... Are they meaningful? Do they stay lie with a reasonable confidence interval range? What does it mean if the interval contains a zero?
+3. Interpret b0, b1, b2, .... Are they meaningful? Do they lie with a reasonable confidence interval range? What does it mean if the interval contains a zero?
 
 4. Obtain a point estimate of the response variable (y) when X=0. Is the estimate meaningful or reliable?
 
