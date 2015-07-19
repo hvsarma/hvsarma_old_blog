@@ -8,13 +8,12 @@ In the sport of cricket, a batting strike rate is a measure of how frequently a 
 I am making a religious attempt to find relationship between a batsman's strike rate and other stats available. Data is sourced from ESPN cricinfo, and have been wrangled, and grokked for demonstrating a linear relationship. Though admittedly, there exist other ('efficient') methods of analysis, I am applyng my python skills to do regression concepts.
 
 Check out my analysis 
-#<a href = 'https://github.com/hvsarma/Cricket-Prediction/blob/master/Luther-presentation.pdf'> here. /a>
 
 You may also tweak my code below.
 
 ###1. Import relevant modules. I use a few statsmodel functions here. You may want to try with Scikit learn modules as well.
 
-{% highlight ruby %}
+```
 # Scraping and loading 
 from __future__ import print_function
 import csv
@@ -41,11 +40,11 @@ from statsmodels import graphics
 
 # Random Seed Generator to make this 'world' still.
 np.random.seed(1024)
-{% endhighlight %}
+```
 
 ###2. Scrape from ESPN page using lxml. Be respectful and do not hack in.
 
-{% highlight ruby %}
+```
 url1 = 'http://stats.espncricinfo.com/ci/engine/stats/index.html?class=2;filter=advanced;orderby=matches;'
 
 out = csv.writer(open('ODI_batting.csv','wb',))
@@ -87,11 +86,13 @@ for page in url5:
     for row in zipped:
         out.writerow(row)
         zipped = None
-{% endhighlight %}
+```
 
 ###3. Read from the file, after a bunch of cleaning on the dataset.
 
 # Read in to a Pandas dataframe
+
+{% highlight ruby %}
 pl_bat_df = pd.read_csv(r"ODI_batting_cleaned.csv")
 
 # Filter dataset to last 7 years of data, with StrikeRate <150.
