@@ -4,7 +4,7 @@ title: About me
 permalink: /about/
 ---
 
-I am a data scientist, currently in training at the Metis Summer Bootcamp -  a program that instills grit, passion, and knowledge in machine learning applications using Python, by sourcing practical cases from the industries.
+I am a data scientist, currently in training at the Metis Summer Bootcamp -  a 3-month intensive program that instills grit, passion, and knowledge in machine learning applications using Python by sourcing practical cases from the industries.
 
 I presently live in New York City, but have studied and worked in Bangalore (India), London (England), Singapore, and Toronto (Canada), the last being my current 'home'.
 
@@ -12,7 +12,7 @@ I presently live in New York City, but have studied and worked in Bangalore (Ind
 
 ### Some stats about me:
 
-- 15 years of industry experience (domains worked on: Online Ad Optimization, Digital Analytics, Retail Analytics, Loyalty Analytics, Travel Analytics, Retail Marketing Research)
+- About 7 years of data analytics experience (domains worked on: Online Ad Optimization, Digital Analytics, Retail Analytics, Loyalty Analytics, Travel Analytics, Retail Marketing Research)
 
 	- 2.5 years in Big Data Analytics and Data Science in marketing domain (SAS, SPSS Modeler, R, Tableau)
 
@@ -20,7 +20,7 @@ I presently live in New York City, but have studied and worked in Bangalore (Ind
 
 	- 2.5 years experience in agile, start-up environments, wearing 'all sorts of hats'.
 
-	- Quite some years doing B2B research with a consultancy (in India and Singapore).
+	- And a few years doing B2B research with a consultancy (in India and Singapore).
 
 
 ### Contact me
