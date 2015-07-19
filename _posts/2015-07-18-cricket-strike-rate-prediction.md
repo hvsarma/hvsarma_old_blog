@@ -11,7 +11,7 @@ You may also tweak my code below.
 
 ###1. Import relevant modules. I use a few statsmodel functions here. You may want to try with Scikit learn modules as well.
 
-```
+{% highlight ruby %}
 # Scraping and loading 
 from __future__ import print_function
 import csv
@@ -38,7 +38,7 @@ from statsmodels import graphics
 
 # Random Seed Generator to make this 'world' still.
 np.random.seed(1024)
-```
+{% highlight ruby %}
 
 ###2. Scrape from ESPN page using lxml. Be respectful and do not hack in.
 
