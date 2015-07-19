@@ -9,11 +9,13 @@ Here, I limit my notes to a part of the analysis that tells us a confusing story
 
 If you would want to download this data in python, feel free to use my code.
 
-`urls = 'http://web.mta.info/developers/data/nyct/turnstile/turnstile_%s.txt'
+{% highlight ruby %}
+```urls = 'http://web.mta.info/developers/data/nyct/turnstile/turnstile_%s.txt'
 for date in ['150627', '150620', '150613', '150606']:
     url = urls % date
     !wget {url}
- `
+ ```
+ {% endhighlight %}
 
 -- So, hypothesis is: In any part of the world, peak hours would mean 8am - 10am, and 4pm - 7pm.
 
