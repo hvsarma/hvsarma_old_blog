@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lessons learnt: construction of Linear Regression Models
+title: Lessons learnt - how to build Linear Regression Models
 ---
 
 Characteristics of a regression model is that - there is a probability distribution of Y for each of X, and the means of these probability distributions vary with X.
