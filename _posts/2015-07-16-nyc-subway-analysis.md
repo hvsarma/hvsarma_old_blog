@@ -9,19 +9,26 @@ Here, I limit my notes to a part of the analysis that tells us a confusing story
 
 -- So, hypothesis is: In any part of the world, peak hours would mean 8am - 10am, and 4pm - 7pm.
 
+But, what do you see from these graphs? What insights/patterns can you extract from these graphs?
+
+Legend: X-axis --> hourly time slices for 3 days in June; Y-axis --> Total commuter volume (entries+exits) per station.
+
 
 ####Exhibit a:
 
 Hourly commuter volume at the World Trade Center station.
-![wtc commuter volume]({{hvsarma.github.io}}/images/wtc-plot.png)
+![world trade center station]({{hvsarma.github.io}}/images/wtc-plot.png)
 
 ####Exhibit b:
+Hourly commuter volume at the Wall Street station.
+![wall street station]({{hvsarma.github.io}}/images/wallst-plot.png)
 
+####Exhibit c:
 
-Hourly commuter volume at the World Trade Center station.
+Hourly commuter volume at the Time Square station.
+![time square station]({{hvsarma.github.io}}/images/timesq-plot.png)
 
+####Exhibit d:
 
-####Exhibit b:
-
-
-Hourly commuter volume at the World Trade Center station.
+Hourly commuter volume at the NYC Penn - 34st station.
+![time square station]({{hvsarma.github.io}}/images/pennst34-plot.png)
