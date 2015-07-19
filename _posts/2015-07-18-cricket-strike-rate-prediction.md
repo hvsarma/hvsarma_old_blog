@@ -5,9 +5,7 @@ title: A 'linear-regression' approach to predicting strike rate in cricket...
 
 In the sport of cricket, a batting strike rate is a measure of how frequently a batsman achieves scoring runs. The higher the strike rate, the more effective a batsman is at scoring quickly.
 
-I am making a religious attempt to find relationship between a batsman's strike rate and other stats available. Data is sourced from ESPN cricinfo, and have been wrangled, and grokked for demonstrating a linear relationship. Though admittedly, there exist other ('efficient') methods of analysis, I am applyng my python skills to do regression concepts.
-
-Check out my analysis 
+I am making a religious attempt to find relationship between a batsman's strike rate and other stats available. Data is sourced from ESPN cricinfo, and have been wrangled, and grokked for demonstrating a linear relationship. Though admittedly, there exist other ('efficient') methods of analysis, I applied my python skills to do regression concepts. A summary of analysis is in my blog. Check it out.
 
 You may also tweak my code below.
 
@@ -90,9 +88,8 @@ for page in url5:
 
 ###3. Read from the file, after a bunch of cleaning on the dataset.
 
+```
 # Read in to a Pandas dataframe
-
-{% highlight ruby %}
 pl_bat_df = pd.read_csv(r"ODI_batting_cleaned.csv")
 
 # Filter dataset to last 7 years of data, with StrikeRate <150.
@@ -103,19 +100,19 @@ filtered_df = pl_bat_df[(pl_bat_df.StrikeRate < 150)]
 filtered_df = filtered_df[(filtered_df.SeasonYear > 2008)]
 
 filtered_df['AvgRunRate'] = pl_bat_df.TotalRuns / pl_bat_df.Matches / 50
-{% endhighlight %}
+```
 
 ###4. Dmatrix in Patsy is a pretty cool option to set a regression formula.
 
-{% highlight ruby %}
+```
 filtered_df = filtered_df.iloc[np.random.permutation(len(filtered_df))]
 y_all, X_all = dmatrices('StrikeRate ~ BattingAvg*AvgRunRate+HighestScore*Matches'\
                  ,data=filtered_df, return_type='dataframe')
-{% endhighlight %}
+```
 
 ###5. Run Regression on X and Y.
 
-{% highlight ruby %}
+```
 from sklearn import datasets, linear_model
 from sklearn import cross_validation
 
@@ -123,11 +120,11 @@ filtered_df = filtered_df.iloc[np.random.permutation(len(filtered_df))]
 linear_reg_model = linear_model.LinearRegression()
 rsq_scores = cross_validation.cross_val_score(linear_reg_model, X_all, y_all, n_jobs=3,cv=5)
 rsq_scores
-{% endhighlight %}
+```
 
 ###6. Look at my regression plane over two X variable against StrikeRate.
 
-{% highlight ruby %}
+```
 from mpl_toolkits.mplot3d import Axes3D
 
 def linear_model3D(df_adv):
@@ -161,4 +158,4 @@ def linear_model3D(df_adv):
     ax.set_xlabel('AvgRunRate')
     ax.set_ylabel('BattingAvg')
     ax.set_zlabel('StrikeRate')
-{% endhighlight %}
+```
