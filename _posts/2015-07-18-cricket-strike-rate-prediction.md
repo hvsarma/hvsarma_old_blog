@@ -38,7 +38,7 @@ from statsmodels import graphics
 
 # Random Seed Generator to make this 'world' still.
 np.random.seed(1024)
-{% highlight ruby %}
+{% endhighlight %}
 
 ###2. Scrape from ESPN page using lxml. Be respectful and do not hack in.
 
@@ -159,3 +159,5 @@ def linear_model3D(df_adv):
     ax.set_ylabel('BattingAvg')
     ax.set_zlabel('StrikeRate')
 ```
+
+
