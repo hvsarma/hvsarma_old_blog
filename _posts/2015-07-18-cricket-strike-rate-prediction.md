@@ -42,7 +42,7 @@ np.random.seed(1024)
 
 ###2. Scrape from ESPN page using lxml. Be respectful and do not hack in.
 
-```
+{% highlight ruby %}
 url1 = 'http://stats.espncricinfo.com/ci/engine/stats/index.html?class=2;filter=advanced;orderby=matches;'
 
 out = csv.writer(open('ODI_batting.csv','wb',))
@@ -84,11 +84,11 @@ for page in url5:
     for row in zipped:
         out.writerow(row)
         zipped = None
-```
+{% endhighlight %}
 
 ###3. Read from the file, after a bunch of cleaning on the dataset.
 
-```
+{% highlight ruby %}
 # Read in to a Pandas dataframe
 pl_bat_df = pd.read_csv(r"ODI_batting_cleaned.csv")
 
@@ -100,19 +100,19 @@ filtered_df = pl_bat_df[(pl_bat_df.StrikeRate < 150)]
 filtered_df = filtered_df[(filtered_df.SeasonYear > 2008)]
 
 filtered_df['AvgRunRate'] = pl_bat_df.TotalRuns / pl_bat_df.Matches / 50
-```
+{% endhighlight %}
 
 ###4. Dmatrix in Patsy is a pretty cool option to set a regression formula.
 
-```
+{% highlight ruby %}
 filtered_df = filtered_df.iloc[np.random.permutation(len(filtered_df))]
 y_all, X_all = dmatrices('StrikeRate ~ BattingAvg*AvgRunRate+HighestScore*Matches'\
                  ,data=filtered_df, return_type='dataframe')
-```
+{% endhighlight %}
 
 ###5. Run Regression on X and Y.
 
-```
+{% highlight ruby %}
 from sklearn import datasets, linear_model
 from sklearn import cross_validation
 
@@ -120,11 +120,11 @@ filtered_df = filtered_df.iloc[np.random.permutation(len(filtered_df))]
 linear_reg_model = linear_model.LinearRegression()
 rsq_scores = cross_validation.cross_val_score(linear_reg_model, X_all, y_all, n_jobs=3,cv=5)
 rsq_scores
-```
+{% endhighlight %}
 
 ###6. Look at my regression plane over two X variable against StrikeRate.
 
-```
+{% highlight ruby %}
 from mpl_toolkits.mplot3d import Axes3D
 
 def linear_model3D(df_adv):
@@ -158,6 +158,6 @@ def linear_model3D(df_adv):
     ax.set_xlabel('AvgRunRate')
     ax.set_ylabel('BattingAvg')
     ax.set_zlabel('StrikeRate')
-```
+{% endhighlight %}
 
 
