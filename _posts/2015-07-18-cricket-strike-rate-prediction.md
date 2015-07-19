@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A 'linear-regression' approach to predicting strike rate in Cricket...
+title: A 'linear-regression' approach to predicting strike rate in cricket...
 ---
 
 In the sport of cricket, a batting strike rate is a measure of how frequently a batsman achieves scoring runs. The higher the strike rate, the more effective a batsman is at scoring quickly.
@@ -8,7 +8,7 @@ In the sport of cricket, a batting strike rate is a measure of how frequently a 
 I am making a religious attempt to find relationship between a batsman's strike rate and other stats available. Data is sourced from ESPN cricinfo, and have been wrangled, and grokked for demonstrating a linear relationship. Though admittedly, there exist other ('efficient') methods of analysis, I am applyng my python skills to do regression concepts.
 
 Check out my analysis 
-<a href = 'https://github.com/hvsarma/Cricket-Prediction/blob/master/Luther-presentation.pdf'> here. /a>
+#<a href = 'https://github.com/hvsarma/Cricket-Prediction/blob/master/Luther-presentation.pdf'> here. /a>
 
 You may also tweak my code below.
 
