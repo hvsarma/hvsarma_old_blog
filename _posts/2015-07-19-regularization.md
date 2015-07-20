@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Lessons learnt - Bias problem or variance problem? Regularization could be the solution to it! 
+title: Lessons learnt - Bias or variance problem in regression? Regularization could be the solution to it! 
 ---
 
-Before I discuss about the regularization, it is important to understand under-fitting and over-fitting. 
+Before I discuss about the regularization in the context of (linear) regression, it is important to understand under-fitting and over-fitting. 
 
 - When a polynomial function or large set of data are used on the model, over-fitting is likely. 
 
