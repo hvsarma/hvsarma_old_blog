@@ -7,7 +7,7 @@ In the sport of cricket, a batting strike rate is a measure of how frequently a 
 
 I am making a religious attempt to find relationship between a batsman's strike rate and other stats available. Data is sourced from ESPN cricinfo, and have been wrangled, and grokked for demonstrating a linear relationship. Though admittedly, there exist other ('efficient') methods of analysis, I applied my python skills to do regression concepts. 
 
-![A summary of my analysis is here.](https://github.com/hvsarma/Cricket-Prediction/blob/master/Luther-presentation.pdf)
+[A summary of my analysis is here.](https://github.com/hvsarma/Cricket-Prediction/blob/master/Luther-presentation.pdf)
 
 You may also tweak my code below.
 
