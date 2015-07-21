@@ -9,6 +9,8 @@ I am making a religious attempt to find relationship between a batsman's strike 
 
 [A summary of my analysis is here.](https://github.com/hvsarma/Cricket-Prediction/blob/master/Luther-presentation.pdf)
 
+![Modeling flow]({{hvsarma.github.io}}/images/cricppt.png)
+
 You may also tweak my code below.
 
 ###1. Import relevant modules. I use a few statsmodel functions here. You may want to try with Scikit learn modules as well.
