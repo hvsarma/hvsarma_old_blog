@@ -7,7 +7,7 @@ Before I discuss about the regularization in the context of (linear) regression,
 
 - When a polynomial function or large set of data are used on the model, over-fitting is likely. 
 
-- When a linear function or fewer features set, then model will under-fit on the data.  
+- When a linear function or fewer features set are used, then model will likely under-fit on the data, unless it is a deterministic relationship. 
 
 - In both cases, model will not be able to generalize for new data and prediction error will be large, so we require "right-fit" on the data.
 
