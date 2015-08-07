@@ -14,7 +14,7 @@ Before I discuss about the regularization in the context of (linear) regression,
 Solution:
 Regularization will penalize the theta parameters in the cost function to prevent overfitting. (i.e. number of predictors > number of observations).
 
-Two types of regularizations:
+Two types of regularizations most commonly understood and used are:
 
 1. Ridge, aka L2 norm (similar to euclidean distance)
 
